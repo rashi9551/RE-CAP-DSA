@@ -62,4 +62,26 @@
 //     }
 // }
 
+// remove duplicates  
+let arr =[2,2,1,1,3,4,3,3,2,5,6,7,70,8,9]
+// let array=new Set(arr).keys()
+// console.log(array);
 
+// one element left rotate 
+
+
+// let temp=arr[0]
+// for(let i=1 ;i<arr.length;i++){
+//     arr[i-1]=arr[i]
+// }
+// arr[arr.length-1]=temp
+// console.log(arr);
+var i =0
+
+const interval=setInterval(()=>{
+    console.log(i)
+    i++
+},1000)
+setTimeout(()=>{
+    clearInterval(interval)
+},10000)
