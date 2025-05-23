@@ -64,6 +64,21 @@
 
 // remove duplicates  
 let arr =[2,2,1,1,3,4,3,3,2,5,6,7,70,8,9]
+// let obj={}
+// arr.forEach((e)=>{
+//     if(!obj[e]){
+//         obj[e]=true
+//     }
+// })
+// console.log(Object.keys(obj));
+for(let i =0 ; i<arr.length ; i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i]>arr[j]){
+            [arr[i],arr[j]]=[arr[j],arr[i]]
+        }
+    }
+};
+console.log(arr);
 // let array=new Set(arr).keys()
 // console.log(array);
 
@@ -76,12 +91,12 @@ let arr =[2,2,1,1,3,4,3,3,2,5,6,7,70,8,9]
 // }
 // arr[arr.length-1]=temp
 // console.log(arr);
-var i =0
+// var i =0
 
-const interval=setInterval(()=>{
-    console.log(i)
-    i++
-},1000)
-setTimeout(()=>{
-    clearInterval(interval)
-},10000)
+// const interval=setInterval(()=>{
+//     console.log(i)
+//     i++
+// },1000)
+// setTimeout(()=>{
+//     clearInterval(interval)
+// },10000)
